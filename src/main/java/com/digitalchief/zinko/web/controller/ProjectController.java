@@ -22,32 +22,37 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/projects")
 @RequiredArgsConstructor
-public class ProjectController {
+public class ProjectController implements ProjectApi{
     private final ProjectService projectService;
     private final ErrorService errorService;
 
+    @Override
     @PostMapping("/create")
     public ProjectDto create(@RequestBody @Valid ProjectCreateUpdateDto projectCreateUpdateDto, Errors errors) {
         errorService.checkErrors(errors);
         return projectService.create(projectCreateUpdateDto);
     }
 
+    @Override
     @GetMapping("/{id}")
     public ProjectFullDto getById(@PathVariable Long id) {
         return projectService.getById(id);
     }
 
+    @Override
     @GetMapping("/all")
     public List<ProjectDto> getAll() {
         return projectService.getAll();
     }
 
+    @Override
     @PutMapping("/{id}")
     public ProjectDto update(@PathVariable Long id, @RequestBody @Valid ProjectCreateUpdateDto projectCreateUpdateDto, Errors errors) {
         errorService.checkErrors(errors);
         return projectService.update(id, projectCreateUpdateDto);
     }
 
+    @Override
     @DeleteMapping("/{id}")
     public void delete(@PathVariable Long id) {
         projectService.delete(id);
