@@ -7,5 +7,5 @@
  3. In Docker terminal run: docker pull jeremiedevosdev/mavenjfx
  4. start application in IDEA
 
-## In root directory you can find Postman Collection to testing all request of Api
-## Also you can send localhost:8080/swagger-ui.html in your browser and see Documentation
+## In root directory you can find Postman Collection to testing all request of Api and description of technical task
+## Also you can send localhost:8080/swagger-ui.html in your browser and see the documentation
