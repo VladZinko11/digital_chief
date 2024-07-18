@@ -9,23 +9,11 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.digitalchief.zinko</groupId>
-    <artifactId>digital_chief_test</artifactId>
+    <artifactId>digital_chief</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>digital_chief_test</name>
-    <description>digital_chief_test</description>
-    <url/>
-    <licenses>
-        <license/>
-    </licenses>
-    <developers>
-        <developer/>
-    </developers>
-    <scm>
-        <connection/>
-        <developerConnection/>
-        <tag/>
-        <url/>
-    </scm>
+    <name>digital_chief</name>
+    <description>digital_chief</description>
+
     <properties>
         <java.version>17</java.version>
         <postgresql.version>42.7.3</postgresql.version>
